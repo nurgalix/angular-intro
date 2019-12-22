@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Nurgali';
   today = new Date();
+  counter = "go";
+
+  btnClicked = () => {
+    this.counter += "o";
+  }
 }
