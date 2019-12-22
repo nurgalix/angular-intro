@@ -5,14 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   name = 'Nurgali';
   today = new Date();
   counter = 0;
   people = [
-    {name:'Nurgali', age:16},
-    {name:'You', age:27}
+    {name: 'Nurgali', age: 16},
+    {name: 'You', age: 27}
   ];
+  mycolor = 'purple'; 
 
   ngOnInit() {
     this.counter = 2;
