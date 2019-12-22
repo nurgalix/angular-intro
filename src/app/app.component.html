@@ -1,8 +1,11 @@
 <div style="text-align: center;">
-  <h2>
+  <h2 *ngIf = "counter > 2">
     My name is {{name}}
   </h2>
   <p>{{counter}}</p>
+  <input type="text" [(ngModel)]="name"/>
   <button (click)="btnClicked()">Click</button>
-  <button (click)="name='Nuraly'" >What? </button>
+  <div *ngFor="let person of people">
+    <h3 *ngIf="person.age > 20">{{person.name}} is {{person.age}} years old.</h3>
+  </div>
 </div>

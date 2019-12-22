@@ -8,9 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Nurgali';
   today = new Date();
-  counter = "go";
+  counter = 0;
+  people = [
+    {name:'Nurgali', age:16},
+    {name:'You', age:27}
+  ];
 
   btnClicked = () => {
-    this.counter += "o";
+    this.counter ++;
   }
 }
