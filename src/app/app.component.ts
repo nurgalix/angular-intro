@@ -10,7 +10,9 @@ export class AppComponent implements OnInit {
   name = 'Nurgali';
   counter = 0;
   mycolor = 'purple'; 
-  people = [];  
+  people = [];
+  today = new Date();
+  cash = 2;  
 
   constructor(private peopleService: PeolpeService) {}
 
