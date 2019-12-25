@@ -10,4 +10,10 @@ export class PeolpeService {
     {name: 'Else', age: 31}
   ];
   constructor() { }
+
+  allPeople() {
+    // we could call external API
+    return this.people
+  }
+
 }

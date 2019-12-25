@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.counter = 2;
-    this.peopleService;
+    this.people = this.peopleService.allPeople();
   }
   btnClicked = () => {
     this.counter ++;
