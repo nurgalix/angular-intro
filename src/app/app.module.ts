@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PeopleService } from './peolpe.service';
+
+import { PeolpeService } from './peolpe.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { PeopleService } from './peolpe.service';
     FormsModule
   ],
   providers: [
-    PeopleService
+    PeolpeService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PeopleService } from './people.service';
 import { PeolpeService } from './peolpe.service';
 
 @Component({
@@ -9,12 +8,11 @@ import { PeolpeService } from './peolpe.service';
 })
 export class AppComponent implements OnInit {
   name = 'Nurgali';
-  today = new Date();
   counter = 0;
   mycolor = 'purple'; 
   people = [];  
 
-  constructor(private PeopleService:PeolpeService)
+  constructor(private peopleService: PeolpeService) {}
 
   ngOnInit() {
     this.counter = 2;
@@ -22,5 +20,6 @@ export class AppComponent implements OnInit {
   }
   btnClicked = () => {
     this.counter ++;
+    this.mycolor = 'red';
   }
 }

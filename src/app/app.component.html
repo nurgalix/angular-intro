@@ -1,11 +1,11 @@
 <div style="text-align: center;">
-  <h1 *ngIf = "counter > 2">
+  <h1 *ngIf = "counter > 0">
     My name is {{name}}
   </h1>
   <p [ngStyle]="{'background-color': mycolor}">{{counter}}</p>
   <input type="text" [(ngModel)]="name"/>
-  <button (click)="btnClicked()">Click</button>
+  <button (click)="btnClicked()">Click me</button>
   <div *ngFor="let person of people">
-    <h3 [ngClass]="{'red': false}">{{person.name}} is {{person.age}} years old.</h3>
+    <h3 [ngClass]="{'red': person.age > 30}">{{person.name}} is {{person.age}} years old.</h3>
   </div>
 </div>
