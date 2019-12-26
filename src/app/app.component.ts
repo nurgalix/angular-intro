@@ -20,8 +20,4 @@ export class AppComponent implements OnInit {
     this.counter = 2;
     this.people = this.peopleService.allPeople();
   }
-  btnClicked = () => {
-    this.counter ++;
-    this.mycolor = 'red';
-  }
 }

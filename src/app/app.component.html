@@ -2,13 +2,16 @@
   <h1 *ngIf = "counter > 0">
     My name is {{ name | lowercase }}
   </h1>
-  <p [ngStyle]="{'background-color': mycolor}">{{counter}}</p>
+  <nav>
+    <a routerLink="first">First</a><br>
+    <a routerLink="sec/5">Second</a>
+  </nav>
+</div>
+<router-outlet></router-outlet>
+<p [ngStyle]="{'background-color': mycolor}">{{counter}}</p>
   <input type="text" [(ngModel)]="name"/>
-  <button (click)="btnClicked()">Click me</button>
   <div *ngFor="let person of people">
     <h3 [ngClass]="{'red': person.age > 30}">{{person.name}} is {{person.age}} years old.</h3>
   </div>
   <h3>{{ today | date:"dd/MM/yy" }}</h3>
   <h2>{{ cash | currency:"EUR" }}</h2>
-</div>
-<router-outlet></router-outlet>
