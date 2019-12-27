@@ -10,6 +10,8 @@ import { LocalResolver } from '@angular/compiler/src/compiler_util/expression_co
 })
 export class SecondComponent implements OnInit {
 
+  myAnimal = 'dog';
+
   constructor(
     private route: ActivatedRoute,
     private location: Location
