@@ -11,6 +11,7 @@ import { LocalResolver } from '@angular/compiler/src/compiler_util/expression_co
 export class SecondComponent implements OnInit {
 
   myAnimal = 'dog';
+  childAnimal = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -24,5 +25,8 @@ export class SecondComponent implements OnInit {
 
   btnClicked = () => {
     this.location.back()
+  }
+  childChanged = (evt) => {
+    this.childAnimal = evt;
   }
 }
